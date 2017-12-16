@@ -102,8 +102,8 @@ module ConsulCookbook
       attribute(:retry_join_wan, kind_of: Array)
       attribute(:retry_max, kind_of: Integer)
       attribute(:rejoin_after_leave, equal_to: [true, false])
-      attribute(:serf_lan_bind, kind_of: String)
-      attribute(:serf_wan_bind, kind_of: String)
+      attribute(:serf_lan, kind_of: String)
+      attribute(:serf_wan, kind_of: String)
       attribute(:server, equal_to: [true, false])
       attribute(:server_name, kind_of: String)
       attribute(:session_ttl_min, kind_of: String)
@@ -194,8 +194,8 @@ module ConsulCookbook
           retry_join_ec2
           retry_join_wan
           retry_max
-          serf_lan_bind
-          serf_wan_bind
+          serf_lan
+          serf_wan
           server
           server_name
           session_ttl_min
